@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="/styles/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="/styles/style_ticketsmarche.css">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/fonts/css/fontawesome-all.min.css">
+		<link rel="manifest" href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://d3vzzcunewy153.cloudfront.net/img/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/075fd0073ae04720a7eb17089389b794.png"><style type="text/css">
+		
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+</style>
+
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+		<div class="header header-fixed header-logo-app" style="">
+        <a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe" class="header-title">Ticketsmarche</a>
+		        
+		<a href="#" data-menu="menu-main" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+    </div>	
+    <div id="footer-bar" class="footer-bar-4">
+		<a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/page/home"><i class="fa fa-home"></i><span>Welcome</span></a>
+		    </div>    
+	<div class="page-content header-clear pb-0">
+		<div class="divider divider-margins"></div>	
+
+				<div class="d-flex content mb-1">
+			<!-- left side of profile -->
+			<div class="flex-grow-1">
+				<h2>Order 454098<i class="fa fa-check color-blue-dark font-18 mt-2 ms-3" id="order_download" data-order="454108"></i></h2>
+				<p class="mb-2 mt-3 me-3">
+					<table class="table table-borderless text-left rounded-sm shadow-l" style="overflow: hidden;">
+						<tbody>
+							<tr class="bg-blue-light color-gray-light">
+								<th scope="row" class="bg-blue-dark color-white">Name</th>
+								<td colspan="2">Belal Ahmed</td>
+							</tr>
+							<tr class="bg-blue-light color-gray-light">
+								<th scope="row" class="bg-blue-dark color-white">Order Date</th>
+								<td colspan="2">Thu 22nd Aug</td>
+							</tr>
+														<tr class="bg-blue-light color-gray-light">
+								<th scope="row" class="bg-blue-dark color-white">Total Paid</th>
+								<td colspan="2">0.00</td>
+							</tr>
+							<tr class="bg-blue-light color-gray-light">
+								<th scope="row" class="bg-blue-dark color-white">Tickets</th>
+								<td>1</td>
+								<td><a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/page/transfermul/388cad2a-c30a-4259-ba60-88b0b1c182fe" title="Transfer" class="icon color-white"><i class='fa fa-share-square fa-lg'></i></a></td>
+							</tr>
+													</tbody>
+					</table>
+				</p>
+				<!--
+				<p class="font-10">
+					<strong class="color-theme pe-1">2.5k</strong>Followers
+					<strong class="color-theme ps-3 pe-1">215</strong>Following 
+				</p>
+				-->
+			</div>
+			<!-- right side of profile. increase image width to increase column size-->
+			<!--<img src="images/pictures/6s.jpg" width="115" height="115" class="rounded-circle mt-3 shadow-xl">-->
+		</div>	
+		
+		<div class="content" id="tab-group-order">
+            <div class="tab-controls tabs-small" data-highlight="bg-green-dark">
+				<a href="#" class="no-effect bg-green-dark no-click" data-active="" data-bs-toggle="collapse" data-bs-target="#tab-ticket" aria-expanded="false">Tickets</a>
+									<a href="#" class="no-effect collapsed" data-bs-toggle="collapse" data-bs-target="#tab-summary" aria-expanded="true">Summary</a>
+									            </div>
+            <div class="clearfix mb-3"></div>
+			
+            <div data-bs-parent="#tab-group-order" class="collapse" id="tab-summary" style="">
+				<table class="table table-borderless text-left" style="overflow: hidden;">
+					<thead>
+						<tr class="bg-blue-dark">
+							<th scope="col" class="color-white">Event</th>
+							<th scope="col" class="color-white">Item</th>
+							<th scope="col" class="color-white">Quantity</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><th scope='row'>DHB</th><td>Standing Invitation</td><td>1</td><td></td></tr>					</tbody>
+				</table>
+            </div>
+			
+            <div data-bs-parent="#tab-group-order" class="collapse show" id="tab-ticket" style="">
+								
+				<div class="splide single-slider-slide slider-no-arrows boxed-slider slider-no-dots splide--slide splide--ltr splide--draggable is-active" id="single-slider-1" style="visibility: visible;">
+					<div class="splide__arrows"><button class="splide__arrow --prev" type="button" aria-controls="single-slider-1-track" aria-label="Previous slide"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" aria-controls="single-slider-1-track" aria-label="Go to first slide"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div>
+					<div class="splide__track" id="single-slider-1-track">
+						<div class="splide__list" id="single-slider-1-list" style="transform: translateX(-1440px);">
+							<div class="splide__slide mx-3 splide__slide--clone" style="width: 324px;">
+								<div >
+									<div >
+										<!-- Card 1 -->
+										<label class="card-container" for="card-1" id="card-container">
+											<div class="card-flip" id="card-flip" data-card="card_1" data-button="flip_button_button">
+												<!-- Card 1 Front -->
+												 <div data-card-height="560" style="min-height: 560px;" class="card mb-0 rounded-m shadow-l front" id="card_1_front">
+													<div class="card-top text-center" style="background-color:#FFFFFF;">&nbsp;&nbsp;
+
+													</div>
+								<div class="card-body text-center p-2">
+																	<div class="card card-style bg-5">
+																		<!-- <div class="card-center text-center"><h1 class="color-white font-32">Thu 22nd Aug</h1>
+																			<p class="color-white boxed-text-l opacity-80 mb-0">Ticket will become active on Event date</p></div> -->
+																			<!-- <div class="card-body text-center p-4">
+																				<img src="qr_code.png" alt="QR Code" class="img-fluid mb-4">
+																			</div> -->
+																			
+																			
+																	</div>
+																	<div class="divider mt-4 mb-0">
+																		
+																	</div>
+																	<div class="card-body text-center ps-3">
+																				<img src="qr_code.png" alt="QR Code" class="img-fluid mb-4">
+																			</div>
+																	<h4 class="color-black text-uppercase font-900 mb-0">DHB</h4>
+																	<p class="under-heading color-black mb-0">Thu 22nd Aug 2024</p>
+																	<p class="under-heading color-black mb-0">Standing Invitation</p>
+																	<p class="under-heading color-black font-900 mb-0 category">Standing</p>
+																	<p class="under-heading color-black font-900 mb-0 area">Standing Invitation</p>
+																	<p class="color-black mb-0 p-2">9201301306919</p>
+																</div>
+																<div class="card-bottom text-center" style="position:relative">
+																	<a href="#" class="icon icon-xs rounded-xs color-white bg-highlight"  style="opacity:0.4;" title="Disabled">
+																		<i class="fa fa-share-square fa-2x">
+
+																		</i>
+																	</a>
+																</div>
+																<div class="card-overlay">
+
+																</div>
+															</div>
+															<div class="card mb-0 rounded-m shadow-l back" id="card_1_back" >
+																<div class="card-top ">
+																	<div class="text-center p-4" style="height:400px;overflow-y:auto;">
+
+																	</div>
+																</div>
+																<div class="card-bottom text-center mb-5">
+																	<a href="#" id="flip_button_button_back" class="icon icon-xs rounded-xs color-white bg-highlight">
+																		<i class="fas fa-qrcode fa-2x">
+																			
+																		</i>
+																	</a>
+																</div>
+																<div class="card-overlay">
+
+																</div>
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+						</div>
+					</div>
+					<ul class="splide__pagination"><li><button class="splide__pagination__page is-active" aria-current="true" type="button" aria-controls="single-slider-1-slide1" aria-label="Go to slide 1"></button></li></ul>				</div>
+				
+			</div>		
+		
+					</div>		
+		
+		<div class="divider mt-4 mb-0"></div>
+				
+		<br/><br/><br/><br/><br/><br/>
+	    
+	</div>
+    <!-- Page content ends here-->
+    
+	<div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-homepages">
+		
+		<div class="d-flex notch-clear">
+									<div class="m-auto align-self-center"><a href="#" class="icon-l text-center close-menu"><i class="font-15 fa fa-times color-red-dark"></i></a></div>
+		</div>
+
+		<div class="divider opacity-80"></div>
+		
+				<!--<a href="www.ticketsmarche.com/" target="_blank">-->
+			<h1 class="px-3 font-28">Ticketsmarche</h1>
+			<p class="px-3 mt-n3 font-11 font-600 color-highlight">Belal Ahmed - belalahmedfekry@gmail.com</p> <!--"c_fname" & "c_lname" replace "fname" & "lname"-->
+		<!--</a>-->
+		
+		<p class="text-uppercase font-10 color-theme font-600 px-3 mb-1">Navigation</p>
+		<div class="list-group list-custom-small list-group-menu">
+			<a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe" id="nav-homepages">
+				<i class="fa font-14 fa-home color-blue-dark"></i>
+				<span>Home</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/page/profile">
+				<i class="fa font-14 fa-user color-green-dark"></i>
+				<span>Profile</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/page/fandf">
+				<i class="fa font-14 fa-user-friends color-brown-dark"></i>
+				<span>Friends &amp; Family</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/page/orders">
+				<i class="fa font-14 fa-layer-group color-yellow-dark"></i>
+				<span>Orders</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+						
+						
+			<a href="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/page/logout">
+				<i class="fa font-14 fa-times color-red-dark"></i>
+				<span>Logout</span>
+				<i class="fa fa-angle-right"></i>
+			</a>			
+		</div>
+		
+				
+		
+			</div>    
+	<div id="toastError" class="toast toast-tiny toast-center bg-red-dark" data-delay="3000" data-autohide="true"><i class="fa fa-exclamation-triangle me-3"></i><span id="toastText">Could not download</span></div>	
+</div>
+
+<script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="/scripts/qrcode.min.js"></script>
+<script src="/scripts/simpleajax.min.js" crossorigin="anonymous"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+	
+	var data = {
+		"client_account_id" : "239578",
+	};
+	
+	const http = new simpleAJAX;
+
+	http.post('https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/check_subscription/',   //change this for live 
+		data, (err, returnData) => {
+			console.log(returnData);
+			
+		if(err) {
+			var toastID = document.getElementById('toastError');
+			toastID = new bootstrap.Toast(toastID);
+			toastID.show();				
+
+		} else {
+			//if subscription is set then we will resubscribe
+			if(returnData == 1 || returnData == "1"){
+				askPermissionRefresh();
+			};
+
+		}
+	});
+});
+
+
+function askPermissionRefresh() {
+	
+  return new Promise(function (resolve, reject) {
+    const permissionResult = Notification.requestPermission(function (result) {
+      resolve(result);
+    });
+
+    if (permissionResult) {
+      permissionResult.then(resolve, reject);
+    }
+  }).then(function (permissionResult) {
+    if (permissionResult !== 'granted') {
+      throw new Error("We weren't granted permission.");
+	  alert("Not Granted Permission");
+    }else{
+		subscribeUserToPushRefresh();
+		
+	}
+  });
+}
+
+function subscribeUserToPushRefresh() {
+  return navigator.serviceWorker
+    .ready.then(function (registration) {
+      const subscribeOptions = {
+		userVisibleOnly: true,
+		applicationServerKey: 'BM8cNVP7vwxswpRkUwRPMT068NgLysNONxpj79FL61PSBkOsNck82sJDEJybk2CBy-SV4Fq7OJRu72EoGZyXfAI',
+      };
+
+      return registration.pushManager.subscribe(subscribeOptions);
+    })
+    .then(function (pushSubscription) {
+      console.log(
+        'Received PushSubscription: ',
+        JSON.stringify(pushSubscription),
+      );
+	  console.log("resubscribed to push notifications");
+	//pass subscription to the server
+	savePushToServer(pushSubscription);	
+	
+	 // alert(JSON.stringify(pushSubscription));
+      return pushSubscription;
+    });
+}
+
+function savePushToServer(pushSubscription) {
+	console.log("save to server attempt");
+	var data = {
+		"pushSubscription" : pushSubscription,
+		"customer_account_id" : "239578"
+	};
+	const http = new simpleAJAX;
+
+	http.post('https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/push_resubscribe_refresh/',   //change this for live 
+		data, (err, returnData) => {
+			console.log(returnData);
+			
+		if(err) {
+			var toastID = document.getElementById('toastError');
+			toastID = new bootstrap.Toast(toastID);
+			toastID.show();				
+
+		} else {
+			console.log("push token refreshed");
+
+		}
+	});
+}
+  
+</script>
+
+<script type="text/javascript" src="https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/scripts/custom.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+	//POST Request
+	const http = new simpleAJAX;
+	var googleWallet = document.querySelectorAll('.wallet_download');
+
+	googleWallet.forEach(el => el.addEventListener('click', e => {
+		var data = {
+			"order" : "388cad2a-c30a-4259-ba60-88b0b1c182fe",
+			"ticket" : el.getAttribute('data-ticket'),
+			"type" : el.getAttribute('data-type')
+		};
+		downloadWallet(data);
+
+		e.preventDefault();
+	}));
+
+	function downloadWallet(data){
+		http.post('https://app.ticketsmarche.com/17f95c00-4ab0-492d-94a6-3a647e5ea2fe/wallet/',
+			data, (err, returnData) => {
+			if(err) {
+				var toastID = document.getElementById('toastError');
+				toastID = new bootstrap.Toast(toastID);
+				toastID.show();				
+
+			} else {
+				returnData = JSON.parse(returnData);
+
+				if(typeof(returnData.link) !== "undefined"){
+					//window.open(returnData.link, "_blank");
+					window.location.href = returnData.link;
+				}else{
+					var toastID = document.getElementById('toastError');
+					var toastContent = document.getElementById('toastText').innerHTML = returnData.error;
+					toastID = new bootstrap.Toast(toastID);
+					toastID.show();
+				}
+			}
+		});				
+	}
+});		
+</script>
+
+
+</body>
